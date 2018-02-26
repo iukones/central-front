@@ -44,7 +44,7 @@ body{
 	font-family: 'Electrolize', Arial, sans-serif;
 	font-weight: 400;
 	font-size: 15px;
-	color: #fff;
+	/* color: #fff; */
 }
 a{
 	text-decoration: none;
