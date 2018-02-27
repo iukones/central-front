@@ -67,11 +67,11 @@ function startPalindromTree() {
 
 
 
-function pyramid() {
-  // var floors = parseInt(prompt('¿De cuantos pisos será tu pirámide?'));
+function pyramid(text) {
+  var floors = parseInt(prompt('¿De cuantos pisos será tu pirámide?'));
   // var floors = parseInt(document.createElement('input'));
-  var floors = document.createElement("input");
-  floors.setAttribute('type', 'text');
+  // var floors = document.createElement("input");
+  // floors.setAttribute('type', 'text');
   console.log(floors);
   var space = '';
   var bricks = '';
