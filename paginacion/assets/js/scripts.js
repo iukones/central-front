@@ -66,13 +66,9 @@ function startPalindromTree() {
 }
 
 
-
-function pyramid(text) {
-  var floors = parseInt(prompt('¿De cuantos pisos será tu pirámide?'));
-  // var floors = parseInt(document.createElement('input'));
-  // var floors = document.createElement("input");
-  // floors.setAttribute('type', 'text');
-  console.log(floors);
+function pyramid(form) {
+  var floors = form.floorsInput.value;
+  console.log(form.floorsInput.value);
   var space = '';
   var bricks = '';
   for(var i = 0; i < floors; i++) {
@@ -84,7 +80,7 @@ function pyramid(text) {
     div.appendChild(pre);
     pre.innerHTML = space + bricks + bricks;
   }
-  document.querySelector('.pyramid').addEventListener('click', pyramid);
+  // document.querySelector('.pyramid').addEventListener('click', pyramid);
 }
 
 function levelTitle() {

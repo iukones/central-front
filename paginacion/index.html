@@ -72,10 +72,14 @@
 			<div class="content">
 				<h2>¿De cuantos pisos será tu pirámide?</h2>
 				<p>Vamos intenta construir tu propia piramide</p>
-				<button onclick="pyramid()" class="pyramid">Construye tu pirámide</button>
-				<form id="form">
-					<p><label>¿De cuantos pisos será tu pirámide?</label><input type="text" onchange="pyramid()"/></p>					
-				</form>				
+				<form id="form" action="">
+					<p>
+						<label for="floors-input">¿De cuantos pisos será tu pirámide?</label>
+						<input id="floors-input" type="number"name="floorsInput"align="center"/>
+					</p>
+					<input type="button" value="Construye tu pirámide" onclick="pyramid(this.form)">
+					<!-- <button onclick="pyramid(this.form)" class="pyramid">Construye tu pirámide</button> -->
+				</form>
 				<div class="pyramid-div"><pre></pre></div>
 			</div>
 		</div>
