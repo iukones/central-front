@@ -1,3 +1,11 @@
+document.querySelector('#rank-input').addEventListener('keypress', function keyUpText(e) {
+  var key = e.which || e.keyCode;
+  if (key === 13) {
+    e.preventDefault();
+    cambiarPassword(document.querySelector('.form'));
+  }
+})
+
 function cambiarPassword(form) {
   var password = form.passInput.value;
   console.log(form.passInput.value);
