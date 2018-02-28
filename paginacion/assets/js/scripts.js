@@ -1,5 +1,6 @@
-function cambiarPassword() {
-  var password = prompt('¿Cual es tu contraseña?');
+function cambiarPassword(form) {
+  var password = form.passInput.value;
+  console.log(form.passInput.value);
   var newPassword = "";
 
   for(var i = 0; i < password.length; i++) {
@@ -17,8 +18,8 @@ function cambiarPassword() {
       newPassword = newPassword + password[i];
     }
   }
-  console.log(newPassword);
-  document.querySelector('.new-pass').innerHTML = '¡"' + newPassword + '" es tu nuevo password!';
+  console.log('tu nuevo pass: ' + newPassword);
+  document.querySelector('.new-pass').innerHTML = '¡ " ' + newPassword + ' " es tu nueva contraseña!';
 }
 
 
@@ -83,8 +84,9 @@ function pyramid(form) {
   // document.querySelector('.pyramid').addEventListener('click', pyramid);
 }
 
-function levelTitle() {
-  var level = parseInt(prompt('¿Que nivel eres?'));
+function levelTitle(form) {
+  var level = form.rankInput.value;
+  console.log(form.rankInput.value);
   if (level > 19) {
     document.querySelector('.level-rank').innerHTML = '¡Eres Ben 10!';
     document.querySelector('.character-image').src = 'assets/images/ben10.jpg';
